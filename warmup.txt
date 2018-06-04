@@ -1,0 +1,18 @@
+What is a callback function? How is it different from a plain ol' everyday function?
+-A callback function is a function passed into another function as an argument, which is then invoked inside the outer function 
+to complete some kind of routine or action.
+
+What portion of the following code is the callback function? What does this 
+particular callback function do? var tripledNumbers = numbers.map(function(number) {
+return number * 3;
+});
+-number is the callback function. number is multiplied by 3.
+
+Does map() alter the array it is called upon?
+-the map method does not mutate the array on which it is called. The callback function can.
+
+Discuss with your partner when you use forEach() and when it might be better to use
+map()?
+-Whenever a new array needs to be created with its resuts of being called on a function of every element.
+
+(map description map calls a provided callback function once for each element in an array, in order, and constructs a new array from the results. callback is invoked only for indexes of the array which have assigned values, including undefined.)
